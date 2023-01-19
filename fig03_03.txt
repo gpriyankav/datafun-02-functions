@@ -1,0 +1,29 @@
+PS C:\Users\KONGA\Documents\datafun-02-functions> & C:/Users/KONGA/AppData/Local/Programs/Python/Python311/python.exe c:/Users/KONGA/Documents
+/datafun-02-functions/fig03_03.py
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 2
+Enter result (1=pass, 2=fail): 2
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 2
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 2
+Passed: 6
+Failed: 4
+PS C:\Users\KONGA\Documents\datafun-02-functions> & C:/Users/KONGA/AppData/Local/Programs/Python/Python311/python.exe c:/Users/KONGA/Documents
+/datafun-02-functions/fig03_03.py
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 1
+Enter result (1=pass, 2=fail): 1
+Passed: 10
+Failed: 0
+Bonus to instructor

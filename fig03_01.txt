@@ -1,0 +1,5 @@
+//output    
+
+PS C:\Users\KONGA\Documents\datafun-02-functions> & C:/Users/KONGA/AppData/Local/Programs/Python/Python311/python.exe c:/Users/KONGA/Documents
+/datafun-02-functions/fig03_01.py
+Class average is 81.7

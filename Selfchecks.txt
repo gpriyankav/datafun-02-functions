@@ -1,0 +1,555 @@
+//Selfchecks and textbook exercise 
+
+(base) C:\Users\KONGA>ipython
+Python 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.31.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: number1 = int(input('Enter first integer: '))
+Enter first integer: 10
+
+In [2]: number2 = int(input('Enter second integer: '))
+Enter second integer: 5
+
+In [3]: total = number1+number2
+
+In [4]: print('The Sum of' , number1, 'and', number2, 'is', total)
+The Sum of 10 and 5 is 15
+
+//if- else statements 
+
+In [5]: grade = 85
+
+In [6]: if grade > = 60:
+   ...:     print('passed')
+  File "<ipython-input-6-1b79cc8fe4c9>", line 1
+    if grade > = 60:
+               ^
+SyntaxError: invalid syntax
+
+
+In [7]: if grade >= 60:
+   ...:     print('passed')
+   ...:
+passed
+
+In [8]: grade = 85
+
+In [9]: if grade >= 60:
+   ...:     print('passed')
+   ...:
+passed
+
+In [10]: grade = 55
+
+In [11]: if grade >=60:
+    ...:     print('passed')
+    ...:
+
+In [12]: grade = 85
+
+In [13]: if grade >= 60:
+    ...:     print('passed')
+    ...: else:
+    ...:     print('failed')
+    ...:
+passed
+
+In [14]: grade = 55
+
+In [15]: if grade >= 60:
+    ...:     print('passed')
+    ...: else:
+    ...:     print('failed')
+    ...:
+failed
+
+In [16]: grade = 87
+
+In [17]: if grade >= 60:
+    ...:     result = 'passed'
+    ...: else:
+    ...:     result = 'failed'
+    ...:
+
+In [18]: result
+Out[18]: 'passed'
+
+In [19]: result = ('passed' if grade >=60 else 'failed')
+
+In [20]: result
+Out[20]: 'passed'
+
+In [21]: 'passed' if grade >=60 else 'failed'
+Out[21]: 'passed'
+
+//Multiple Statements in a Suite
+
+In [22]: grade = 49
+
+In [23]: if grade >= 60:
+    ...:     print('passed')
+    ...: else:
+    ...:     print('failed')
+    ...:     print('you must take this course again')
+    ...:
+failed
+you must take this course again
+In [24]: grade = 77
+
+In [25]: if grade >= 90:
+    ...:     print('A')
+    ...: elif grade >= 80:
+    ...:     print('B')
+    ...: elif grade >= 70:
+    ...:     print('C')
+    ...: elif grade >= 60:
+    ...:     print('D')
+    ...: else:
+    ...:     print('E')
+    ...:
+C
+
+In [26]: grade = 80
+
+In [27]: if grade >= 90:
+    ...:     print('A')
+    ...: else:
+    ...:     print('Not passed')
+    ...: elif grade >= 80:
+    ...:     print('B')
+  File "<ipython-input-27-f200bff1bcfd>", line 5
+    elif grade >= 80:
+    ^
+SyntaxError: invalid syntax
+In [28]: product = 3
+
+In [29]: while product <= 50:
+    ...:     product = product*3
+    ...:
+
+In [30]: product
+Out[30]: 81
+
+In [31]: product = 7
+
+In [32]: while product <= 1000:
+    ...:     product = product * 7
+    ...:
+
+In [33]: product
+Out[33]: 2401
+
+In [34]: for character in 'Programming' :
+    ...:     print(character, end =' ')
+    ...:
+P r o g r a m m i n g
+In [35]: for character in 'Priyanka' :
+    ...:     print(character)
+    ...:
+P
+r
+i
+y
+a
+n
+k
+a
+
+In [36]: for character in 'Vijay':
+    ...:     print(character ,'\n')
+    ...:
+V
+
+i
+
+j
+
+a
+
+y
+
+
+In [37]: print(10,20,30, sep = ',')
+10,20,30
+
+In [38]: print(10,20,30)
+10 20 30
+
+In [39]: total = 0
+
+In [40]: for number in [2,-3,0,17,9]:
+    ...:     total = total+number
+    ...:
+
+In [41]: total
+Out[41]: 25
+
+In [42]: for counter in Range(20):
+    ...:     print(counter, end=' ')
+    ...:
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-42-1e73c81f93ad> in <module>
+----> 1 for counter in Range(20):
+      2     print(counter, end=' ')
+      3
+
+NameError: name 'Range' is not defined
+
+In [43]: for counter in range(20):
+    ...:     print(counter, end = ' ')
+    ...:
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+In [44]: total = 0
+
+In [45]: for number in range(1000001):
+    ...:     total = total + number
+    ...:
+
+In [46]: total
+Out[46]: 500000500000
+
+In [47]: total = 0
+
+In [48]: for number in [1,2,3,4,5]:
+    ...:     total += number
+    ...:
+
+In [49]: total
+Out[49]: 15
+
+In [50]: x = 7
+
+In [51]: x *= 5
+
+In [52]: x
+Out[52]: 35
+
+In [53]: x = 12
+
+In [54]: x **= 2
+
+In [55]: x
+Out[55]: 144
+
+In [56]: number1 = 7
+
+In [57]: number2 = 5
+
+In [58]: print(f'{number1} times {number2} is {number1*number2}')
+7 times 5 is 35
+In [59]: for count in range(2):
+    ...:     value = int(input('Enter an integer: '))
+    ...:     if value % 2 == 0:
+    ...:         print(f'{value} is even')
+    ...:     else:
+    ...:         print(f'{value} is odd')
+    ...:
+Enter an integer: 9
+9 is odd
+Enter an integer: 4
+4 is even
+
+In [60]: for number in range(5,10):
+    ...:     print(number , end = ' ')
+    ...:
+5 6 7 8 9
+In [61]: for number in range(0,10,2):
+    ...:     print(number , end = ' ')
+    ...:
+0 2 4 6 8
+In [62]: for number in range(10,0,-2):
+    ...:     print(number , end = ' ')
+    ...:
+10 8 6 4 2
+In [63]: for number in range(10,0,2):
+    ...:     print(number , end = ' ')
+    ...:
+
+In [64]: for number in range(99,-1,-11):
+    ...:     print(number , end= ' ')
+    ...:
+99 88 77 66 55 44 33 22 11 0
+In [65]: total = 0
+
+In [66]: for number in range(2,101,2):
+    ...:     total += number
+    ...:
+
+In [67]: total
+Out[67]: 2550
+
+In [68]: amount = 112.34567
+
+In [69]: print(amount)
+112.34567
+
+In [70]: print(f'{amount:.20f}')
+112.34566999999999836746
+
+In [71]: from decimal import Decimal
+
+In [72]: principal = Decimal('1000.00')
+
+In [73]: principal
+Out[73]: Decimal('1000.00')
+
+In [74]: rate = Decimal('0.05')
+
+In [75]: rate
+Out[75]: Decimal('0.05')
+
+In [76]: x = Decimal('10.5')
+
+In [77]: y = Decimal('2')
+
+In [78]: x+y
+Out[78]: Decimal('12.5')
+
+In [79]: x//y
+Out[79]: Decimal('5')
+
+In [80]: x+=y
+
+In [81]: x
+Out[81]: Decimal('12.5')
+
+In [82]: for year in range(1,11):
+    ...:     amount = principal*(1+rate)**year
+    ...:     print(f'{year:>2}{amount:>10.2f}')
+    ...:
+ 1   1050.00
+ 2   1102.50
+ 3   1157.62
+ 4   1215.51
+ 5   1276.28
+ 6   1340.10
+ 7   1407.10
+ 8   1477.46
+ 9   1551.33
+10   1628.89
+
+In [83]: from decimal import Decimal
+
+In [84]: print(f'{Decimal('37.45') * Decimal('(6.25/100)+1'):.2f}')
+  File "<ipython-input-84-e51e9b1b6966>", line 1
+    print(f'{Decimal('37.45') * Decimal('(6.25/100)+1'):.2f}')
+                      ^
+SyntaxError: f-string: unmatched '('
+
+
+In [85]: print(f"{Decimal('37.45') * Decimal('(6.25/100)+1'):.2f}")
+---------------------------------------------------------------------------
+InvalidOperation                          Traceback (most recent call last)
+<ipython-input-85-318ad4316e4a> in <module>
+----> 1 print(f"{Decimal('37.45') * Decimal('(6.25/100)+1'):.2f}")
+
+InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+In [86]: print(f'{Decimal('37.45') * Decimal('1.0625'):.2f}')
+  File "<ipython-input-86-de274fb1ee55>", line 1
+    print(f'{Decimal('37.45') * Decimal('1.0625'):.2f}')
+                      ^
+SyntaxError: f-string: unmatched '('
+
+
+In [87]: print(f"{Decimal('37.45') * Decimal('1.0625'):.2f}")
+39.79
+In [88]: for number in range(100):
+    ...:     if number == 10:
+    ...:         break
+    ...:     print(number, end = ' ')
+    ...:
+0 1 2 3 4 5 6 7 8 9
+In [89]: for number in range(10):
+    ...:     if number == 5:
+    ...:         continue
+    ...:     print(number,end = ' ')
+    ...:
+0 1 2 3 4 6 7 8 9
+In [90]: gender = 'Female'
+
+In [91]: age = 70
+
+In [92]: if gender == 'Female' and age >= 65:
+    ...:     print('Senior Female')
+    ...:
+Senior Female
+
+In [93]: sem_avg = 80
+
+In [94]: final_exam = 95
+
+In [95]: if sem_avg >= 90 or final_exam >=90:
+    ...:     print('A grade')
+    ...:
+A grade
+
+In [96]: i = 1
+
+In [97]: j = 2
+
+In [98]: k = 3
+
+In [99]: m = 2
+
+In [100]: (i>=1) and (j<4)
+Out[100]: True
+
+In [101]: (m<=99) and (k<m)
+Out[101]: False
+
+In [102]: (j>=i) or (k==m)
+Out[102]: True
+
+In [103]: (k+m<j) or (3-j>=k)
+Out[103]: False
+
+In [104]: not(k>m)
+Out[104]: False
+
+In [105]: grades = [85,93,45,89,85]
+
+In [106]: sum(grades)/len(grades)
+Out[106]: 79.4
+
+In [107]: import statistics
+
+In [108]: statistics.mean(grades)
+Out[108]: 79.4
+
+In [109]: statistics.median(grades)
+Out[109]: 85
+
+In [110]: statistics.mode(grades)
+Out[110]: 85
+
+In [111]: sorted(grades)
+Out[111]: [45, 85, 85, 89, 93]
+
+In [112]: values = [47,95,88,73,88,84]
+
+In [113]: statistics.mean(values)
+Out[113]: 79.16666666666667
+
+In [114]: statistics.median(values)
+Out[114]: 86.0
+
+In [115]: statistics.mod(values)
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-115-1e55e59c1a27> in <module>
+----> 1 statistics.mod(values)
+
+AttributeError: module 'statistics' has no attribute 'mod'
+
+In [116]: statistics.mode(values)
+Out[116]: 88
+In [117]: a = b =5
+
+In [118]: print('a = ',a,'\n b = ' , b)
+a =  5
+ b =  5
+
+// chapter 4 functions
+
+In [123]: def square(number):
+     ...:     """calculate the square of number."""
+     ...:     return number**2
+     ...:
+
+In [124]: square(7)
+Out[124]: 49
+
+In [125]: square(2.5)
+Out[125]: 6.25
+In [126]: def square_root(number):
+     ...:     return number ** 0.5
+     ...:
+
+In [127]: square_root(4)
+Out[127]: 2.0
+
+In [128]: square_root(6.25)
+Out[128]: 2.5
+
+In [129]: def maximum(value1,value2,value3):
+     ...:     max_value = value1
+     ...:     if value2>value1:
+     ...:         max_value = value2
+     ...:     if value3 > value2:
+     ...:         max_value = value3
+     ...:     return max_value
+     ...:
+
+In [130]: maximum(2,5,7)
+Out[130]: 7
+
+In [131]: maximum(34.3,23.7,89.1)
+Out[131]: 89.1
+
+In [132]: maximum('yellow','red','orange')
+Out[132]: 'yellow'
+
+In [133]: maximum(13.5,-3,7)
+Out[133]: 7
+
+In [134]: min(1,5,7,9)
+Out[134]: 1
+
+In [135]: max(14,27,5,3)
+Out[135]: 27
+
+In [136]: min('orange')
+Out[136]: 'a'
+
+In [137]: import random
+
+In [138]: for roll in range(10):
+     ...:     print(random.randrange(1,7),end= ' ')
+     ...:
+3 4 2 5 3 4 3 5 3 6
+In [139]: random.seed(30)
+
+In [140]: for roll in range(10):
+     ...:     print(random.randrange(1,7),end = ' ')
+     ...:
+5 3 5 1 5 6 2 3 1 4
+In [141]: random.seed(30)
+
+In [142]:  for roll in range(10):
+     ...:     print(random.randrange(1,7),end = ' ')
+     ...:
+5 3 5 1 5 6 2 3 1 4
+In [143]: import random
+
+In [144]: for i in range(20):
+     ...:     print('H' if random.randrange(2)==0 else 'T', end = ' ')
+     ...:
+T H H T H H H H H T T H T H H T T H T H
+In [145]: import math
+
+In [146]: math.sqrt(900)
+Out[146]: 30.0
+
+In [147]: math.fabs(-10)
+Out[147]: 10.0
+
+In [148]: student = ('Sue' , [89,94,85])
+
+In [149]: student
+Out[149]: ('Sue', [89, 94, 85])
+
+In [150]: names,grades = student
+
+In [151]: print(f'{name}:{grades}')
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-151-8f67c0404007> in <module>
+----> 1 print(f'{name}:{grades}')
+
+NameError: name 'name' is not defined
+
+In [152]: print(f'{names}:{grades}')
+Sue:[89, 94, 85]

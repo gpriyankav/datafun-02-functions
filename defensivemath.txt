@@ -1,0 +1,31 @@
+PS C:\Users\KONGA\Documents\datafun-02-functions> & C:/Users/KONGA/AppData/Local/Programs/Python/Python311/python.exe c:/Users/KON
+GA/Documents/datafun-02-functions/defensivemath.py
+Explore some functions in the math module
+
+math.comb(5,1) = 5
+math.perm(5,1) = 5
+
+math.comb(5,3) = 10
+math.perm(5,3) = 60
+
+math.pi = 3.141592653589793
+
+math.degrees(2 * math.pi) = 360.0
+math.radians(180)         = 3.141592653589793
+
+Call get_circle_area() function with a different values, 5
+
+get_circle_area(5) = 31.41592653589793
+get_circle_area(-16) = -100.53096491487338
+get_circle_area(math.inf) = inf
+Error: can't multiply sequence by non-int of type 'float'
+get_circle_area('five') = None
+
+Call print_circle_areas() function with a list of values
+
+r = 5, area=31.41592653589793
+r = 10, area=62.83185307179586
+r = 25, area=157.07963267948966
+r = 30, area=188.49555921538757
+r = 45, area=282.7433388230814
+r = 50, area=314.1592653589793

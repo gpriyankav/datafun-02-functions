@@ -1,0 +1,42 @@
+PS C:\Users\KONGA\Documents\datafun-02-functions> & C:/Users/KONGA/AppData/Local/Programs/Python/Python311/python.exe c:/Users/KON
+GA/Documents/datafun-02-functions/pybuddy_oopd.py
+
+Welcome, I'm a new PyBuddy.
+
+I'm Alice.
+I'm a Species.CAT with 4 legs.
+I weigh 8.12 kgs.
+I've been alive for 0:00:00.
+I know:
+  - Git
+  - GitHub
+  - Python
+  - Markdown
+  - VS Code
+
+
+You'll need curiousity, the ability to search the web,
+and the tenacity and resourcefulness
+to solve all kinds of challenges.
+Let's get started!
+
+
+
+Welcome, I'm a new PyBuddy.
+
+I'm Rex.
+I'm a Species.DOG with 4 legs.
+I weigh 10.44 kgs.
+I've been alive for 0:00:00.
+I know:
+  - Git
+  - GitHub
+  - Python
+  - Markdown
+  - VS Code
+
+
+You'll need curiousity, the ability to search the web,
+and the tenacity and resourcefulness
+to solve all kinds of challenges.
+Let's get started!

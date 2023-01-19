@@ -1,0 +1,20 @@
+PS C:\Users\KONGA\Documents\datafun-02-functions> & C:/Users/KONGA/AppData/Local/Programs/Python/Python311/python.exe c:/Users/KON
+GA/Documents/datafun-02-functions/doggydaycare.py
+Hello!, We'll ask for three temperatures in Celcius.
+
+Provide a temperature in Celcius: 20
+
+Provide a temperature in Celcius: 10
+
+Provide a temperature in Celcius: 030
+
+The sum is 60.0.
+The average is 20.0.
+The product is 6000.0.
+The smallest is 10.0.
+The largest is 30.0.
+The range is 20.0.
+
+It's above freezing at the Doggy Daycare!
+
+Do you want to learn more about puppies? (y/n) y

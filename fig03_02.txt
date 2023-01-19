@@ -1,0 +1,9 @@
+PS C:\Users\KONGA\Documents\datafun-02-functions> & C:/Users/KONGA/AppData/Local/Programs/Python/Python311/python.exe c:/Users/KONGA/Documents
+/datafun-02-functions/fig03_02.py
+Enter grade, -1 to end: 9
+Enter grade, -1 to end: 4
+Enter grade, -1 to end: 1
+Enter grade, -1 to end: 1
+Enter grade, -1 to end: 5
+Enter grade, -1 to end: -1
+Class average is 4.00
