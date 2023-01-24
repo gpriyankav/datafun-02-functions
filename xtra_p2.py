@@ -35,6 +35,7 @@ def add_two(first, second):
 
 print(f"Sum of 2 numbers: {add_two(1,2)}")    
 print("Addind 2 words:", (add_two("Vijay","Priyanka")))
+print("Addind 2 words:", (add_two("hello","world")))
 print()
 
 
